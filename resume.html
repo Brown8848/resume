@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>李悦 - 嵌入式工程师</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 20px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(135deg, #1a365d 0%, #2d5a87 100%);
+    color: #fff;
+    padding: 48px 48px 40px;
+  }
+  .header h1 { font-size: 36px; font-weight: 700; margin-bottom: 4px; }
+  .header .title { font-size: 18px; opacity: 0.9; margin-bottom: 20px; }
+  .header .info { display: flex; flex-wrap: wrap; gap: 12px 32px; font-size: 14px; opacity: 0.85; }
+  .header .info span { display: flex; align-items: center; gap: 6px; }
+  .section { padding: 32px 48px; border-bottom: 1px solid #f0f0f0; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a365d;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e8edf3;
+    position: relative;
+  }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 48px;
+    height: 2px;
+    background: #2d5a87;
+  }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .skill-tag {
+    background: #e8edf3;
+    color: #1a365d;
+    padding: 4px 14px;
+    border-radius: 16px;
+    font-size: 13px;
+  }
+  .exp-item { margin-bottom: 24px; }
+  .exp-item:last-child { margin-bottom: 0; }
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    margin-bottom: 4px;
+  }
+  .exp-header h3 { font-size: 16px; font-weight: 600; color: #1a365d; }
+  .exp-header .sub { font-size: 13px; color: #888; }
+  .exp-header .date { font-size: 13px; color: #888; white-space: nowrap; }
+  .exp-desc { font-size: 14px; color: #555; margin-bottom: 6px; }
+  .exp-detail { font-size: 14px; color: #555; }
+  .exp-detail ul { list-style: none; padding-left: 0; }
+  .exp-detail li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 6px;
+  }
+  .exp-detail li::before {
+    content: '·';
+    position: absolute;
+    left: 4px;
+    color: #2d5a87;
+    font-weight: bold;
+  }
+  .exp-detail .tech {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #2d5a87;
+  }
+  .project-sub {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 8px;
+  }
+  .edu-item { margin-bottom: 16px; }
+  .edu-item:last-child { margin-bottom: 0; }
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+  }
+  .edu-header h3 { font-size: 15px; font-weight: 600; color: #1a365d; }
+  .edu-header .school { font-size: 14px; color: #555; }
+  .edu-header .date { font-size: 13px; color: #888; }
+  .edu-detail { font-size: 13px; color: #666; margin-top: 4px; }
+  .edu-detail .courses { color: #888; font-size: 12px; }
+  .self-eval { font-size: 14px; color: #555; line-height: 1.8; }
+  @media (max-width: 640px) {
+    body { padding: 10px; }
+    .header { padding: 28px 20px; }
+    .header h1 { font-size: 28px; }
+    .section { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>李悦</h1>
+    <div class="title">嵌入式工程师</div>
+    <div class="info">
+      <span>&#x1F4E7; 3179350869@qq.com</span>
+      <span>&#x1F4DE; 18312601237</span>
+      <span>&#x1F4CD; 广东省茂名市</span>
+      <span>&#x1F466; 男</span>
+      <span>&#x1F393; 本科</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">专业技能</div>
+    <div class="skill-tags">
+      <span class="skill-tag">C语言</span>
+      <span class="skill-tag">数据结构</span>
+      <span class="skill-tag">STM32</span>
+      <span class="skill-tag">STC</span>
+      <span class="skill-tag">AT系列</span>
+      <span class="skill-tag">HAL库</span>
+      <span class="skill-tag">GPIO/PWM</span>
+      <span class="skill-tag">RS485/UART</span>
+      <span class="skill-tag">SPI/IIC</span>
+      <span class="skill-tag">Modbus RTU</span>
+      <span class="skill-tag">Wiegand</span>
+      <span class="skill-tag">Keil MDK</span>
+      <span class="skill-tag">STM32CubeMX</span>
+      <span class="skill-tag">Proteus</span>
+      <span class="skill-tag">Altium Designer</span>
+      <span class="skill-tag">电烙铁/万用表/示波器</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">工作经验</div>
+    <div class="exp-item">
+      <div class="exp-header">
+        <h3>斑马技术服务（广州）有限公司</h3>
+        <span class="date">2025/08 - 至今</span>
+      </div>
+      <div class="exp-desc">研发助理实习生</div>
+      <div class="exp-detail">
+        <ul>
+          <li>参与 Trident 无底纸热敏标签打印机研发项目，负责竞品打印机功能性、可靠性测试及压辊寿命测试，为新品研发提供关键参考依据。</li>
+          <li>独立设计并实现基于法奥意威 FR3C 六轴协作机械臂与电动真空吸盘的自动取纸装置，替代人工完成取纸、剥离、丢弃全流程。</li>
+          <li>通过示教方式标定机械臂关键路径点，编写运动控制程序实现全自动循环流程；设计并调试 I/O 信号交互，将打印机出纸传感器信号经电平转换后接入机械臂数字输入端口实现实时响应，通过数字输出端口控制真空吸盘启停。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">项目经历</div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <h3>智能门禁终端系统</h3>
+        <span class="date">2025/11 - 2026/04</span>
+      </div>
+      <div class="project-sub">基于 STC8H4K64LCD · RFID · Modbus RTU · Wiegand · 时间片轮询框架</div>
+      <div class="exp-detail">
+        <ul>
+          <li>基于 STC8H4K64LCD 开发完整门禁终端产品，采用模块化分层设计，基于定时器 1ms 时间片轮询任务调度，合理分配各模块 CPU 时间片，保证系统实时性与稳定性。</li>
+          <li>完成 16 路电容式触摸按键驱动开发，利用 MCU 内置 TSU 控制器将电容量转换为数字信号，实现按键状态可靠检测。</li>
+          <li>驱动 TFT-LCD 屏幕实现待机界面（时间、门状态）、菜单导航、用户管理等可视化交互；通过 PWM 驱动蜂鸣器产生门铃音效。</li>
+          <li>搭建 RFID 硬件读卡电路，解析数据帧格式完成卡号提取与校验，支持卡号 LCD 显示与用户注册授权。</li>
+          <li>基于 RS485 物理层实现 Modbus RTU 从站协议，含 04 功能码数据响应与 CRC16 校验；通过外部中断实时捕捉 Wiegand 26 协议的 D0/D1 信号解析卡号。</li>
+          <li>驱动 DS1302 RTC 芯片实现时间获取/校准与掉电保持；用户信息与系统配置参数写入 EEPROM 持久化存储。</li>
+          <li>实现密码保护、用户增删管理、翻页查看历史记录（循环队列存储）、多级菜单导航等功能。</li>
+        </ul>
+        <div class="tech">涉及技术：STC8H4K64LCD · TFT-LCD · 电容触摸 · PWM · RFID · Modbus RTU · Wiegand 26 · RS485 · DS1302 · EEPROM</div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <h3>基于六轴协作机械臂与真空吸盘的自动取纸装置</h3>
+        <span class="date">2025/11 - 2026/01</span>
+      </div>
+      <div class="project-sub">法奥意威 FR3C · I/O 信号交互 · 电平转换 · 继电器驱动</div>
+      <div class="exp-detail">
+        <ul>
+          <li>独立为 Trident 打印机项目设计取纸装置，替代人工完成出纸测试中的取纸、剥离、丢弃全流程，提升测试效率与一致性。</li>
+          <li>将打印机出纸传感器信号经电平转换电路接入机械臂数字输入端口，实现出纸信号的实时硬触发响应替代轮询方式。</li>
+          <li>通过数字输出端口驱动继电器控制电动真空吸盘启停，配合运动节拍完成吸纸与释放动作。</li>
+          <li>示教标定取纸位、剥离位、废纸箱位等路径点，编写运动控制程序并优化路径缩短单次周期时间。</li>
+          <li>协调打印机出纸时序与机械臂动作时序匹配，处理传感器信号抖动、吸附可靠性等工程问题。</li>
+        </ul>
+        <div class="tech">涉及技术：数字 I/O · 电平转换 · 继电器驱动 · 传感器采集 · 六轴协作机械臂运动控制</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">教育经历</div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <h3>广东理工学院</h3>
+        <span class="school">通信工程 · 本科</span>
+        <span class="date">2024/09 - 2026/07</span>
+      </div>
+      <div class="edu-detail">
+        <span class="courses">主修课程：嵌入式系统开发与设计、C语言程序设计、单片机原理、数字电子技术、模拟电子技术、信号与系统、通信原理</span>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <h3>广州科技贸易职业学院</h3>
+        <span class="school">智能网联汽车技术 · 专科</span>
+        <span class="date">2021/09 - 2024/06</span>
+      </div>
+      <div class="edu-detail">
+        <span class="courses">主修课程：C语言程序设计、单片机应用技术、C-V2X与车路协同、智能传感器技术、车载网络与通信技术</span>
+        <div style="margin-top:4px;">扩展能力：智能网联汽车检测与运维职业技能等级证书（中级）· 一种可承受侧向力的空气悬架限位机构（专利）</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">自我评价</div>
+    <div class="self-eval">
+      在近一年的实习中，完整参与了一款嵌入式产品从需求分析、方案设计到编码调试、测试验证的开发流程，基本掌握了嵌入式软件开发的整个环节。能够独立完成单片机外设驱动、通信协议移植与调试、简单 UI 框架设计等开发工作，具备基础电路分析与软硬件联调能力。熟悉 C 语言和常用 MCU 开发环境，遇到问题时能主动查找资料并解决。工作中注重代码规范与模块化设计，有良好的团队协作习惯。目前仍在持续积累项目经验，希望能尽快成长为一名能独立承担开发任务的嵌入式软件工程师。
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
